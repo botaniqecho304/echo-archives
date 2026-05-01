@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echo Archives</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 🌿 BACKGROUND SYSTEM -->
+    <div class="forest-core"></div>
+    <div class="floating-spirits"></div>
+    <div class="moss-veins"></div>
+
+    <!-- 🌙 MAIN PORTAL -->
+    <main class="portal" id="home">
+
+        <h1 class="title">Echo Archives</h1>
+
+        <p class="subtitle">
+            A living Appalachian fae archive where the forest breathes through molten memory.
+        </p>
+
+        <div class="card-grid">
+
+            <!-- 🃏 GRIMOIRE CARD -->
+            <div class="tarot-card pink" onclick="goTo('grimoire')">
+                <div class="label">ECHO ARCANA</div>
+                <h2>The Grimoire</h2>
+                <p>Memory. Ink. Living archive of echoes.</p>
+                <span>CLICK TO DRAW</span>
+            </div>
+
+            <!-- 🃏 CROWN CARD -->
+            <div class="tarot-card fuchsia" onclick="goTo('crown')">
+                <div class="label">ECHO ARCANA</div>
+                <h2>Crown Chamber</h2>
+                <p>Embodiment. Form. Return to self.</p>
+                <span>CLICK TO DRAW</span>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- 🌿 GRIMOIRE PAGE -->
+    <section class="page hidden" id="grimoire">
+
+        <h2>Echo Archives: Grimoire Layer</h2>
+
+        <p>The ink stirs brighter in the roots. The archive recognizes you.</p>
+
+        <a href="https://botaniq-grimoire-flow.base44.app/" target="_blank">
+            Step Into the Archive
+        </a>
+
+        <button onclick="goTo('home')">Return</button>
+    </section>
+
+    <!-- 👑 CROWN PAGE -->
+    <section class="page hidden" id="crown">
+
+        <h2>Echo Archives: Crown Chamber</h2>
+
+        <p>Where roots become crowns and living form is returned.</p>
+
+        <a href="http://drippd-n-braided-studio.square.site" target="_blank">
+            Enter Chamber
+        </a>
+
+        <button onclick="goTo('home')">Return</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
